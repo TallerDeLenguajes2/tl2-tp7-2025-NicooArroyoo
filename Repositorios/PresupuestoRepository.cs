@@ -2,7 +2,7 @@ using Microsoft.Data.Sqlite;
 
 public class PresupuestoRepository
 {
-    private readonly string cadenaConexion = "Data Source=DB/Tienda.db";
+    private readonly string cadenaConexion = "Data Source=Tienda.db";
     public void Create(Presupuesto presupuesto)
     {
         using var conexion = new SqliteConnection(cadenaConexion);
